@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Vocational Education Delegation | ANZ Forum 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        anzBlue: '#012169', /* Australian Flag Deep Blue */
+                        anzRed: '#E4002B',  /* Australian Flag Red */
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #012169;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism for cards */
+        .glass-card {
+            background: #ffffff;
+            border: 1px solid rgba(1, 33, 105, 0.15);
+            box-shadow: 0 10px 30px rgba(1, 33, 105, 0.05);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .glass-card:hover {
+             transform: translateY(-5px);
+             box-shadow: 0 20px 40px rgba(1, 33, 105, 0.1);
+        }
+
+        /* Organic Image Shapes */
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            transition: all 0.5s ease-in-out;
+        }
+        .organic-shape:hover {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+
+        /* Reveal on scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #012169;
+            border-radius: 4px;
+        }
+
+        /* Exotic Footer Ornament */
+        .exotic-footer {
+            position: relative;
+            background: #ffffff;
+        }
+        .exotic-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 15px;
+            background-image: 
+                linear-gradient(135deg, #012169 25%, transparent 25%), 
+                linear-gradient(225deg, #012169 25%, transparent 25%), 
+                linear-gradient(315deg, #012169 25%, transparent 25%), 
+                linear-gradient(45deg, #012169 25%, transparent 25%);
+            background-position: -7.5px 0, -7.5px 0, 0 0, 0 0;
+            background-size: 15px 15px;
+            background-repeat: repeat-x;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="antialiased relative">
+
+    <!-- Top Left Only Exotic Ornament (Mandala/Floral inspired by user request) -->
+    <div class="fixed top-0 left-0 w-64 md:w-80 h-64 md:h-80 z-0 pointer-events-none opacity-90">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full fill-anzBlue">
+            <!-- Intricate Corner Floral/Exotic Design -->
+            <path d="M0 0 L200 0 C150 10 100 50 60 100 C20 150 0 200 0 200 Z" fill="#012169" opacity="0.05"/>
+            <path d="M0 0 L140 0 C90 20 50 60 20 120 C5 150 0 160 0 160 Z" fill="#012169" opacity="0.1"/>
+            <path d="M0 0 L90 0 C60 10 30 30 10 70 C0 90 0 100 0 100 Z" fill="#012169" opacity="0.9"/>
+            
+            <!-- Exotic Accents -->
+            <circle cx="25" cy="25" r="4" fill="#FFFFFF"/>
+            <circle cx="50" cy="15" r="3" fill="#E4002B"/>
+            <circle cx="15" cy="50" r="3" fill="#E4002B"/>
+            <path d="M 12 12 L 35 35 M 35 12 L 12 35" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+            <path d="M 0 60 Q 30 30 60 0" stroke="#E4002B" stroke-width="2" fill="none" opacity="0.8"/>
+            <path d="M 0 75 Q 37.5 37.5 75 0" stroke="#012169" stroke-width="1" fill="none" opacity="0.4"/>
+        </svg>
+    </div>
+
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- COVER PAGE -->
+        <header class="min-h-[70vh] flex flex-col justify-center items-center text-center relative mb-24 reveal active">
+            <div class="bg-white rounded-3xl p-10 md:p-16 max-w-4xl relative overflow-hidden border-2 border-anzBlue shadow-xl">
+                
+                <span class="inline-block py-1.5 px-6 rounded-full border-2 border-anzRed text-anzRed tracking-widest text-xs font-bold uppercase mb-8">
+                    August 2026
+                </span>
+                
+                <h1 class="font-display text-5xl md:text-7xl font-bold text-anzBlue mb-6 leading-tight tracking-tight">
+                    Vietnam Vocational<br>Education Delegation
+                </h1>
+                
+                <div class="w-32 h-1 bg-gradient-to-r from-anzBlue via-anzRed to-anzBlue mx-auto mb-8 rounded-full"></div>
+                
+                <h2 class="text-xl md:text-2xl font-semibold text-anzBlue mb-8 font-sans tracking-wide uppercase">
+                    Australia & New Zealand Educational Forum
+                </h2>
+                
+                <p class="text-anzBlue text-lg max-w-2xl mx-auto leading-relaxed font-medium">
+                    Showcasing the leading Technical and Vocational Education and Training (TVET) Centers of Excellence in Vietnam, prepared for global integration and comprehensive transnational partnerships.
+                </p>
+            </div>
+            
+            <div class="mt-16 animate-bounce">
+                <a href="#directory" class="text-anzBlue hover:text-anzRed transition-colors">
+                    <i class="fas fa-chevron-down text-3xl"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- INSTITUTION DIRECTORY -->
+        <main id="directory" class="pb-24">
+            <div class="text-center mb-24 reveal relative inline-block left-1/2 -translate-x-1/2">
+                <h3 class="text-4xl md:text-5xl font-display text-anzBlue font-bold mb-4 relative z-10">Participating Institutions</h3>
+                <div class="h-1 w-40 bg-anzRed mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-32">
+
+                <!-- INSTITUTION 1: VCMI -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row-reverse relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                            <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://en.vcmi.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>                            
+                         <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">College of Machinery and Irrigation (VCMI)</h4>
+                            <p></p>
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 left-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://i.ex-cdn.com/nongnghiepmoitruong.vn/files/content/2025/06/06/z6675251407868_1da7a4eb1a4a5d8328a7621c7c90558a-182230_225-142747.jpg" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 right-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXIUHFN76eklRyeioSF48v97WiYscfclh794DFD85ucp9TEwkx2aH56IAS&s=10" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    The College of Machinery and Irrigation (VCMI) is a vocational education institution under the Ministry of Agriculture and Environment. Established in 1976, the college's main campus is located in Đồng Nai City, Vietnam. VCMI is one of the first 10 high-quality colleges in Vietnam, officially recognized under Decision No. 532/QĐ-BGDĐT issued by Vietnam's Ministry of Education and Training. The college currently has 266 staff, officials, and employees, and trains more than 6,000 students annually at the college and intermediate levels. VCMI currently offers training in a total of 16 occupations, 8 of which are delivered to international standards (6 occupations in Mechanical Engineering and Electrical–Electronics following German standards, and 2 occupations in Logistics following Australian standards). VCMI's development strategy is to become a high-quality green vocational training center, pursuing sustainable development and building a strong reputation within Vietnam's education system, the ASEAN region, and internationally.                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Strategic Focus
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Green Transformation</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Logistics (Aus Std)</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Mech & Auto Tech</span>
+                                </div>
+                            </div>
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-15 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://vcmi.edu.vn/wp-content/uploads/2017/02/a-chuong.jpg" alt="Delegate" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Nguyen Van Chuong, PhD</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Rector</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i>chuongcogioi@gmail.com</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> +84918237572</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INSTITUTION 2: Lilama 2 -->
+                <section class="reveal relative">
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row-reverse relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                            <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://lilama2.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Lilama 2 International Technology College</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 left-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHDEb_6MtAxQjr9eEWIaFBXBjCho74yKtEbHx_KS7gZFtLhYbR7puBD11D&s=10" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 right-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBDFFZDJjMLdZXBUEh8AIkYXZNxEZsNeFSRPo7pHi9JfqQvBIrYWsWuuc&s=10" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    Strategically located in the dynamic industrial hub of Dong Nai, Lilama 2 stands at the forefront of TVET in Southeast Asia. As a recognized Center of Excellence, it pioneers in adopting Industry 4.0 technologies and strict international-standard training frameworks with top global enterprises.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Global Reach
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Mechatronics</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Aviation</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Dual-Training Models</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/052026/ths-nguyen-khanh-cuong_20260507053110.jpg?width=1800" alt="Rector" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Nguyen Khanh Cuong</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Rector</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> cuonglilama2@gmail.com</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> 0989751616</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+           </section>        
+                <!-- INSTITUTION 3: Hanoi College for Electro-Mechanics (HCEM) -->
+                <section class="reveal relative">
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row-reverse relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                            <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://hcem.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Hanoi College for Electro-Mechanics (HCEM)</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 left-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://hcem.edu.vn/wp-content/uploads/2025/07/IMG_03571-min.jpg" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 right-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://hcem.edu.vn/wp-content/uploads/2023/12/CS1-1400x788.jpg" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    Strategically located in the dynamic industrial hub of Dong Nai, Lilama 2 stands at the forefront of TVET in Southeast Asia. As a recognized Center of Excellence, it pioneers in adopting Industry 4.0 technologies and strict international-standard training frameworks with top global enterprises.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Global Reach
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Mechatronics</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Aviation</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Dual-Training Models</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-15 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz8kyF1VJ4wmwSBO0RtBe5JHRlNi5oAqsPOmbua9Wt5KxFtm4p" alt="Rector" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Dong Van Ngoc	</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Rector</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> dongvanngoc@gmail.com</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> +84903228154
+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+           </section>        
+
+                <!-- INSTITUTION 4: CAM -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                            <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://en.cam.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                            <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">College of Agricultural Mechanics (CAM)</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 right-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://cam.edu.vn/wp-content/uploads/2022/04/nhat-2.jpg" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://cam.edu.vn/wp-content/uploads/2026/04/giaovien.png" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    With a rich foundational history spanning over sixty years, the College of Agricultural Mechanics stands as a premier public educational institution under Vietnam's Ministry of Agriculture and Rural Development. Recognized as one of only three vocational schools strategically operating to meet advanced training standards of developed G20 nations, it boasts an expansive 16.5-hectare campus.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Core Disciplines
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Automotive Technology</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Metal Cutting</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Industrial Electricity</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://cam.edu.vn/wp-content/uploads/2022/04/Co-Phuong-400x400.jpg?text=Pham+Thi\nLan+Phuong" alt="Rector" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Pham Thi Lan Phuong</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Rector</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> phuong@cknn.edu.vn</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> 0979866515</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- INSTITUTION 5: BCI -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                            <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://bci.edu.vn/" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                            <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Bac Ninh College of Industry (BCI)</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 right-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://dddn.1cdn.vn/2025/05/17/picture1.jpg?text=BCI+Facility" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFuUtGUfvzUxo-10Msl7JenPWgemaQ-K34DrzRF7J5g&s=10?text=BCI+Campus" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    Bac Ninh College of Industry is a leading vocational training institution in Bac Ninh Province, specializing in industrial fields. Every year, over 4,000 skilled students are trained to be capable of applying Industry 4.0 technologies, providing human resources to global tech companies like Samsung, Foxconn, and Canon.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Strategic Priorities
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">DX in TVET</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Semiconductor Industry</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Smart Factories</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://photo-baomoi.bmcdn.me/w500_r1/2026_06_28_411_55495929/de63f652911978472108.jpg?text=Dr+Khue\nVu+Quang" alt="Rector" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Dr Khue Vu Quang</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Rector</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> khuevq.bci@gmail.com</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> +84 919582124</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INSTITUTION 6: TDC -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row-reverse relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                            <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://english.tdc.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                           <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Thu Duc College of Technology (TDC)</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 left-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://edu2review.com/storage/school-images/6642d267/dfff8881-9a24-49aa-8e68-6f6a178f2eae/768x432_9f2493f7-ae21-4fb0-9a38-a360c93007a0.jpg?text=TDC+Facility" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 right-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvk6pdZAR0AIYJBt4eKMg0KAu3kvZenpfX_rd1IRunOw&s=10?text=TDC+Campus" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    Established in 1984, TDC boasts a proud 40-year history of excellence. Operating on a spacious 50,000 m² campus equipped with modern classrooms and advanced workshops, it delivers an optimal learning environment for over 10,000 students. TDC is committed to nurturing high-skilled, creative human resources for HCMC.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Partnership Focus
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Credit Transfer (CoE)</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Study Tours in Aus</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">AI Digital Transf.</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://image.congan.com.vn/thumbnail/CATP-480-2026-1-8/10a-5949-1.png?text=Dr.+Pham\nHuu+Loc" alt="President" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Dr. Pham Huu Loc</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">President</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> phamhuuloc@tdc.edu.vn</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> +84 903 828 252</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INSTITUTION 7: CMPU -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                             <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://caodangyduoccongdong.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                           <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Community College of Medicine & Pharmacy</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 right-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://cdyduoccongdong.com/wp-content/uploads/2022/03/z3286397829291_c55894c075196a5640ce8894ca94cf1a.jpg?text=CMPU+Facility" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://cdyduoccongdong.com/wp-content/uploads/2022/03/cao-dang-y-duoc-cong-dong-400.jpg?text=CMPU+Campus" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    Founded on the foundation of Bach Mai Intermediate Medical and Pharmaceutical School, the college has more than ten years of experience focusing on training high-quality healthcare human resources. Located in Bac Ninh, it emphasizes practical clinical training at major hospitals, ensuring graduates possess solid medical ethics and proficient skills.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Specializations
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Pharmacy</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Nursing</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Traditional Medicine</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPP-lCsyatfOfn9eMjtx9QEGq3u9FYZ5pEpRFkAKbzug&s=10?text=Vu+Thi+Thao" alt="Principal" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Vu Thi Thao</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Principal</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> Vuthao5891@gmail.com</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> 0913518805</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- INSTITUTION 8: Vien Dong College -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row-reverse relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                             <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://tuyensinh.viendong.edu.vn/en" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+
+                           <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Vien Dong College</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 left-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://tuyensinhso.vn/images/files/tuyensinhso.com/truong-cao-dang-vien-dong-5.jpg?text=VIDO+Facility" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 right-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://media.edunet.vn/Media/News/images/media2023/Lan%20Anh-2023/cdviendong.png?text=VIDO+Campus" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                  	  Vien Dong College is uniquely positioned as a premier partner for international educational cooperation in Ho Chi Minh City. With a strong foundation in practical, career-focused training, the institution actively develops strategic alliances with esteemed educational institutions in Australia and New Zealand, providing a dynamic, forward-thinking environment.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Cooperation Goals
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Joint Degree Programs</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Student Exchange</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Global Workforce Dev</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzl1cKxXWdvDD0-zwJG_lNHz1yxmXagaU-oOMNu4TSg&s=10?text=Tran+Thanh\nHai" alt="President" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Tran Thanh Hai</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">President</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> haitran@vido.edu.vn</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> 0903706879</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- INSTITUTION 9: BMTC -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row-reverse relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                             <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://www.bmtc.edu.vn/en" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+
+                            <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Buon Ma Thuot College (BMTC)</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 left-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://storage.bmtc.edu.vn/media/2026/08/img0864-74cwr7.r-1920.webp?text=BMTC+Facility" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 right-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://storage.bmtc.edu.vn/media/2026/08/img1327-e9m2pp.r-1920.webp?text=BMTC+Campus" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    A private vocational education institution located in Dak Lak Province, at the heart of Vietnam's Central Highlands. Upgraded in 2026, it builds on nearly 20 years of experience, driven by the philosophy "Real Learning - Real Practice - Real Careers - Genuine Commitment."
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Areas of Focus
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Healthcare</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Tourism & Hospitality</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Auto Technology</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://baodaklak.vn/file//fb9e3a03798789de0179a1704dea238e/122025/co_thiet_20251214103204.jpg?text=Tran+Thi\nThiet" alt="Rector" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Tran Thi Thiet</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Rector</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> tranthithiet65@gmail.com</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> +84912623165</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INSTITUTION 10: Polytechnic College -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                             <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://caodangbachkhoa.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                            <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">Polytechnic College (Hanoi)</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 right-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://caodangbachkhoa.edu.vn/wp-content/uploads/2026/06/BK-Web-banner-2.png?text=BK+Facility" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://caodangbachkhoa.edu.vn/wp-content/uploads/2025/02/Xuong-thuc-hanh-Cong-nghe-o-to-Truong-Cao-dang-Bach-Khoa.jpg?text=BK+Campus" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    Established in 2009, Polytechnic College carries the mission of cultivating high-quality human resources that meet the rigorous standards of the global labor market. It pioneers the development of 22 key majors aligned with modern economic trends, with roughly 70% of instruction delivered in workshops and laboratories.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Focus Areas
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">TAFE NSW Model</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Engineering Tech</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">IT & Business</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://caodangbachkhoa.edu.vn/wp-content/uploads/2024/12/ThS-Nguyen-Van-Truong-Chu-tich-HDQT-Pho-Hieu-truong-Truong-Cao-dang-Bach-Khoa-1.jpg?text=Nguyen+Van\nTruong" alt="Delegate" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Mr. Nguyen Van Truong</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Chairman, Vice Rector</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> htqt@caodangbachkhoa.edu.vn</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> +84987264888</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INSTITUTION 11: CCI -->
+                <section class="reveal relative">
+                    <div class="hidden lg:block absolute left-[50%] top-full h-32 w-px bg-anzBlue opacity-20 z-0"></div>
+                    
+                    <div class="glass-card rounded-[2rem] p-3 flex flex-col lg:flex-row relative z-10 overflow-hidden">
+                        <div class="lg:w-5/12 p-8 relative overflow-hidden rounded-[1.8rem] bg-gray-50 border border-anzBlue/10">
+                             <div class="flex items-center justify-between mb-8 relative z-10">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center border border-anzBlue/10 shadow-sm text-anzBlue">
+                                    <i class="fas fa-university text-3xl"></i>
+                                </div>
+                                <a href="https://cci.edu.vn" target="_blank" class="px-4 py-2 rounded-full text-xs font-bold hover:bg-anzBlue hover:text-white transition flex items-center gap-2 text-anzBlue border border-anzBlue/20 bg-white">
+                                    Website <i class="fas fa-arrow-right text-[10px]"></i>
+                                </a>
+                            </div>
+                            <h4 class="font-display text-3xl font-bold text-anzBlue mb-6 relative z-10 leading-tight">The College of CCI - Economic & Technical</h4>
+                            
+                            <div class="relative h-64 w-full mt-8 z-10">
+                                <div class="absolute top-0 right-0 w-3/4 h-48 organic-shape overflow-hidden border-4 border-white shadow-lg z-20">
+                                    <img src="https://cci.edu.vn/wp-content/uploads/2026/07/Screenshot-2026-07-02-151256.png?text=CCI+Facility" alt="Facility" class="object-cover w-full h-full organic-shape">
+                                </div>
+                                <div class="absolute bottom-0 left-0 w-2/3 h-40 organic-shape overflow-hidden border-4 border-white shadow-md z-10">
+                                    <img src="https://cci.edu.vn/wp-content/uploads/2024/04/CCI-hoi-nghi-ky-giao-uoc-00.jpg?text=CCI+Campus" alt="Campus" class="object-cover w-full h-full organic-shape">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:w-7/12 p-8 md:p-12 flex flex-col justify-between">
+                            <div>
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Overview
+                                </h5>
+                                <p class="text-anzBlue text-sm leading-relaxed mb-8 font-medium">
+                                    A premier non-public Technical and Vocational Education and Training (TVET) institution dedicated to developing a highly skilled, industry-ready workforce. It bridges the gap between vocational training and real-world application, supplying a diverse pool of highly qualified human resources.
+                                </p>
+
+                                <h5 class="text-anzBlue font-bold tracking-wider uppercase text-xs mb-4 flex items-center gap-2 border-b-2 border-anzBlue/10 pb-2">
+                                    <span class="w-2 h-2 rounded-full bg-anzRed"></span> Focus & Collaboration
+                                </h5>
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Articulation Pathways</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">Digital Transf. in Ed</span>
+                                    <span class="px-4 py-1.5 rounded-full bg-anzBlue/5 text-xs font-bold text-anzBlue border border-anzBlue/20">E-Learning Systems</span>
+                                </div>
+                            </div>
+
+                            <div class="rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-5 mt-auto border-2 border-anzBlue/10 bg-white">
+                                <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-anzRed shadow-sm flex-shrink-0">
+                                    <img src="https://nghenghiepcuocsong.vn/wp-content/uploads/2026/02/T.S-Dao-Thi-Le-Hieu-truong-truong-Trung-cap-Kinh-te-Ky-thuat-Cong-thuong-CCI-tai-Le-ky-niem-20-nam-thanh-lap-truong.jpg?text=Dr.+Dao\nThi+Le" alt="Principal" class="object-cover w-full h-full">
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-anzRed uppercase tracking-widest font-bold mb-1">Key Contact</p>
+                                    <h6 class="font-display font-bold text-lg text-anzBlue">Dr. Dao Thi Le</h6>
+                                    <p class="text-xs text-anzBlue font-semibold mb-2">Principal</p>
+                                    <div class="flex flex-col sm:flex-row sm:gap-4 text-xs text-anzBlue font-medium">
+                                        <span class="flex items-center gap-2"><i class="fas fa-envelope text-anzRed"></i> kinhbacedu@gmail.com</span>
+                                        <span class="flex items-center gap-2 mt-1 sm:mt-0"><i class="fas fa-phone text-anzRed"></i> 0912255565</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+        <!-- FOOTER -->
+        <footer class="mt-32 pt-20 pb-16 text-center relative z-10 reveal exotic-footer">
+            
+            <div class="bg-white inline-block px-12 py-8 rounded-2xl border-2 border-anzBlue shadow-lg relative z-10">
+                <!-- Inner Exotic Box Corners -->
+                <div class="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-anzRed"></div>
+                <div class="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-anzRed"></div>
+                <div class="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-anzRed"></div>
+                <div class="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-anzRed"></div>
+                
+                <p class="text-sm text-anzBlue font-bold tracking-widest uppercase mb-3">The Ministry of Education and Training (MOET) of Viet Nam</p>
+                <p class="text-xs text-anzBlue font-semibold uppercase tracking-wider">Department of Vocational Education and Continuing Education</p>
+                <p class="text-xs text-anzBlue font-semibold uppercase tracking-wider">ANZ Forum 2026 TVET Executive Directory</p>
+            </div>
+            
+        </footer>
+    </div>
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                const elementVisible = 100;
+                
+                reveals.forEach((reveal) => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveal.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Trigger once on load
+        });
+    </script>
+</body>
+</html>
